@@ -33,6 +33,7 @@ const Products = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getProducts();
   }, []);
 
@@ -171,11 +172,17 @@ const Products = () => {
           <div className="left-ads-display col-md-9">
             <div className="wrapper_top_shop">
               <div className="col-md-6 shop_left">
-                <img src="./src/images/banner3.jpg" alt="" />
+                <img
+                  src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685792397/fnqp9dkywfphtuyxtjso.jpg"
+                  alt=""
+                />
                 <h6>40% off</h6>
               </div>
               <div className="col-md-6 shop_right">
-                <img src="./src/images/banner2.jpg" alt="" />
+                <img
+                  src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685792387/mtjlmovmf3p6rdcuyf2w.jpg"
+                  alt=""
+                />
                 <h6>50% off</h6>
               </div>
               <div className="clearfix" />
@@ -195,11 +202,17 @@ const Products = () => {
               </div>
 
               <div className="col-md-6 shop_left shp">
-                <img src="./src/images/banner4.jpg" alt="" />
+                <img
+                  src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685792408/gzrfq2oqwrzzmulsecfn.jpg"
+                  alt=""
+                />
                 <h6>21% off</h6>
               </div>
               <div className="col-md-6 shop_right shp">
-                <img src="./src/images/banner1.jpg" alt="" />
+                <img
+                  src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685792355/c7lb8mecwxqxayqy5wxg.jpg"
+                  alt=""
+                />
                 <h6>31% off</h6>
               </div>
               <div className="clearfix" />
@@ -209,70 +222,30 @@ const Products = () => {
         </div>
       </div>
       {/* //top products */}
+
       <div className="mid_slider_w3lsagile">
         <div className="col-md-3 mid_slider_text">
           <h5>Some More Shoes</h5>
         </div>
         <div className="col-md-9 mid_slider_info">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
-            {/* Indicators */}
             <ol className="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to={0} className="" />
               <li
                 data-target="#myCarousel"
-                data-slide-to={1}
+                data-slide-to={0}
                 className="active"
               />
+              <li data-target="#myCarousel" data-slide-to={1} className="" />
               <li data-target="#myCarousel" data-slide-to={2} className="" />
               <li data-target="#myCarousel" data-slide-to={3} className="" />
             </ol>
             <div className="carousel-inner" role="listbox">
-              <div className="item">
-                <div className="row">
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g1.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g2.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g3.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g4.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className="item active">
                 <div className="row">
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g5.jpg"
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791230/pjdxueuspqfdad4pxkk4.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -281,7 +254,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g6.jpg"
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791255/clgerrjigw3f31jg9srd.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -290,7 +263,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g2.jpg"
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791280/clzuibz9msomjezagvnk.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -299,47 +272,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g1.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="row">
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g1.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g2.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g3.jpg"
-                        alt="Image"
-                        style={{ maxWidth: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
-                    <div className="thumbnail">
-                      <img
-                        src="./src/images/g4.jpg"
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791303/kgo8pehvetbc5gqq9j6h.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -352,7 +285,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g1.jpg"
+                        src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685791323/uuvisrb5kgbu0zbfupqw.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -361,7 +294,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g2.jpg"
+                        src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685791348/wfuelxx8ittzr8iplyo1.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -370,7 +303,7 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g3.jpg"
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791255/clgerrjigw3f31jg9srd.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -379,7 +312,47 @@ const Products = () => {
                   <div className="col-md-3 col-sm-3 col-xs-3 slidering">
                     <div className="thumbnail">
                       <img
-                        src="./src/images/g4.jpg"
+                        src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685791323/uuvisrb5kgbu0zbfupqw.jpg"
+                        alt="Image"
+                        style={{ maxWidth: "100%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="row">
+                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
+                    <div className="thumbnail">
+                      <img
+                        src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685791323/uuvisrb5kgbu0zbfupqw.jpg"
+                        alt="Image"
+                        style={{ maxWidth: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
+                    <div className="thumbnail">
+                      <img
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791255/clgerrjigw3f31jg9srd.jpg"
+                        alt="Image"
+                        style={{ maxWidth: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
+                    <div className="thumbnail">
+                      <img
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791255/clgerrjigw3f31jg9srd.jpg"
+                        alt="Image"
+                        style={{ maxWidth: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-3 col-xs-3 slidering">
+                    <div className="thumbnail">
+                      <img
+                        src="https://res.cloudinary.com/dalqfcdow/image/upload/v1685791280/clzuibz9msomjezagvnk.jpg"
                         alt="Image"
                         style={{ maxWidth: "100%" }}
                       />
@@ -388,10 +361,9 @@ const Products = () => {
                 </div>
               </div>
             </div>
-            {/* The Modal */}
           </div>
         </div>
-        <div className="clearfix"> </div>
+        <div className="clearfix"></div>
       </div>
       <a
         href="#home"

@@ -219,81 +219,82 @@ const Footer = () => {
               </h4>
               <ul>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t1.jpg"
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1839278.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t2.jpg"
+                      src="https://png.pngtree.com/thumb_back/fh260/background/20220510/pngtree-black-and-white-hypnotic-background-image_1169195.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t3.jpg"
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1833009.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t4.jpg"
+                      src="https://png.pngtree.com/thumb_back/fh260/background/20220510/pngtree-black-and-white-hypnotic-background-image_1169195.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t1.jpg"
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1833009.jpg"
+                      alt=" "
+                      className="img-responsive"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a>
+                    <img
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1839278.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t2.jpg"
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1839278.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t3.jpg"
+                      src="https://png.pngtree.com/thumb_back/fh260/background/20220510/pngtree-black-and-white-hypnotic-background-image_1169195.jpg"
                       alt=" "
                       className="img-responsive"
                     />
                   </a>
                 </li>
                 <li>
-                  <a href="single.html">
+                  <a>
                     <img
-                      src="./src/images/t2.jpg"
-                      alt=" "
-                      className="img-responsive"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="single.html">
-                    <img
-                      src="./src/images/t4.jpg"
+                      src="https://png.pngtree.com/background/20220727/original/pngtree-black-and-white-hypnotic-background-picture-image_1833009.jpg"
                       alt=" "
                       className="img-responsive"
                     />

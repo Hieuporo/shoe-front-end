@@ -28,7 +28,10 @@ const Header = () => {
     <nav key={renderKey}>
       <ul>
         <li className="primary-nav">
-          <img src="./src/images/img-DS.png" alt="logo" />
+          <img
+            src="http://res.cloudinary.com/dalqfcdow/image/upload/v1685791738/p8ijts2w1rzly92qergf.png"
+            alt="logo"
+          />
           <Link to="/">DOWNY SHOES</Link>
         </li>
         <li className="secondary-nav">
