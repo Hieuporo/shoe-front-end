@@ -10,7 +10,7 @@ export default ({ mode }) => {
     server: {
       proxy: {
         "/api": {
-          target: process.env.VITE_SERVER_URL,
+          target: "https://hieu-shop-backend.onrender.com",
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ""),
         },
