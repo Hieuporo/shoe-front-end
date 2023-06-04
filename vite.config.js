@@ -9,7 +9,7 @@ export default defineConfig({
       "/api": {
         target: "https://hieu-shop-backend.onrender.com",
         changeOrigin: true,
-        secure: false,
+        secure: true,
         ws: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
