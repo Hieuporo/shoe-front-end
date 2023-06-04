@@ -9,9 +9,15 @@ export default defineConfig({
       "/api": {
         target: "https://hieu-shop-backend.onrender.com",
         changeOrigin: true,
-        secure: true,
         ws: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
+        onError: (err, req, res) => {
+          console.error("Proxy Error:", err);
+          res.writeHead(500, {
+            "Content-Type": "text/plain",
+          });
+          res.end("Proxy Error");
+        },
       },
     },
   },
