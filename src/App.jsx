@@ -64,6 +64,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  console.log(import.meta.env.VITE_SERVER_URL);
   return <RouterProvider router={router} />;
 }
 export default App;
