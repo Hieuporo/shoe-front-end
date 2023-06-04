@@ -20,7 +20,9 @@ const ProductCart = () => {
 
   const getcart = async () => {
     try {
-      const { data } = await axios.get("/api/cart/getAllCartItems");
+      const { data } = await axios.get(
+        `${import.meta.env.BASE_URL}/cart/getAllCartItems`
+      );
       setCart(data);
     } catch (error) {
       console.log(error);

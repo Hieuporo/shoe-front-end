@@ -31,7 +31,11 @@ const Product = () => {
         },
       };
 
-      await axios.post(`/api/cart/${id}`, { quantity }, config);
+      await axios.post(
+        `${import.meta.env.BASE_URL}/cart/${id}`,
+        { quantity },
+        config
+      );
       setFetchCart(!fetchCart);
       navigate("/cart");
     } catch (error) {
@@ -51,7 +55,9 @@ const Product = () => {
 
   const getProductById = async () => {
     try {
-      const { data } = await axios.get(`/api/product/${id}`);
+      const { data } = await axios.get(
+        `${import.meta.env.BASE_URL}/product/${id}`
+      );
       setProduct(data);
     } catch (error) {
       console.log(error);
@@ -60,7 +66,9 @@ const Product = () => {
 
   const getAnotherProduct = async () => {
     try {
-      const { data } = await axios.get(`/api/product/getFourProducts/${id}`);
+      const { data } = await axios.get(
+        `${import.meta.env.BASE_URL}/product/getFourProducts/${id}`
+      );
       setProducts(data);
     } catch (error) {
       console.log(error);
@@ -69,7 +77,9 @@ const Product = () => {
 
   const getAllReviews = async () => {
     try {
-      const { data } = await axios.get(`/api/review/${id}`);
+      const { data } = await axios.get(
+        `${import.meta.env.BASE_URL}/review/${id}`
+      );
       setReviews(data);
     } catch (error) {
       console.log(error);
@@ -93,7 +103,7 @@ const Product = () => {
         },
       };
       await axios.post(
-        `/api/review/${id}`,
+        `${import.meta.env.BASE_URL}/review/${id}`,
         {
           star: rating,
           content,

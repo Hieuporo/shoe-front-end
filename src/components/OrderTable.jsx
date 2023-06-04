@@ -9,7 +9,9 @@ const OrderTable = () => {
 
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("/api/order/getAllOrders");
+      const { data } = await axios.get(
+        `${import.meta.env.BASE_URL}/order/getAllOrders`
+      );
       setOrders(data);
     } catch (error) {
       console.log(error);

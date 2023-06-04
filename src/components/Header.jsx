@@ -16,7 +16,7 @@ const Header = () => {
 
   const logout = async () => {
     try {
-      await axios.get("/api/auth/signout");
+      await axios.get(`${import.meta.env.BASE_URL}/auth/signout`);
       setUser();
       setRenderKey((prevKey) => prevKey + 1);
     } catch (error) {

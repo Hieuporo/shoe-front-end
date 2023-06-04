@@ -23,7 +23,11 @@ const OrderDetail = () => {
           "Content-type": "application/json",
         },
       };
-      await axios.post("/api/order/createOrder", { address, shipping }, config);
+      await axios.post(
+        `${import.meta.env.BASE_URL}/order/createOrder`,
+        { address, shipping },
+        config
+      );
       setAddress("");
       setFetchCart(!fetchCart);
     } catch (error) {

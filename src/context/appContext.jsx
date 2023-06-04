@@ -15,7 +15,7 @@ function AppProvider({ children }) {
 
     try {
       if (token) {
-        const { data } = await axios.get("/api/user");
+        const { data } = await axios.get(`${import.meta.env.BASE_URL}/user`);
         setUser(data);
       }
     } catch (error) {

@@ -19,7 +19,7 @@ const CartItem = ({ product, index, setTotalPrice }) => {
           },
         };
         await axios.patch(
-          `/api/cart/${product.id}`,
+          `${import.meta.env.BASE_URL}/cart/${product.id}`,
           { quantity: quantity - 1 },
           config
         );
@@ -38,7 +38,7 @@ const CartItem = ({ product, index, setTotalPrice }) => {
         },
       };
       await axios.patch(
-        `/api/cart/${product.id}`,
+        `${import.meta.env.BASE_URL}/cart/${product.id}`,
         { quantity: quantity + 1 },
         config
       );
@@ -50,7 +50,7 @@ const CartItem = ({ product, index, setTotalPrice }) => {
 
   const deleteCartItem = async () => {
     try {
-      await axios.delete(`/api/cart/${product.id}`);
+      await axios.delete(`${import.meta.env.BASE_URL}/cart/${product.id}`);
       setFetchCart(!fetchCart);
     } catch (error) {
       console.log(error);

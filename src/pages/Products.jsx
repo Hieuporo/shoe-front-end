@@ -12,7 +12,7 @@ const Products = () => {
 
   const getProducts = async () => {
     try {
-      const { data } = await axios.get("/api/product");
+      const { data } = await axios.get(`${import.meta.env.BASE_URL}/product`);
 
       setProducts(data);
     } catch (error) {
@@ -23,7 +23,9 @@ const Products = () => {
   const getProductByBrandAndPrice = async () => {
     try {
       const { data } = await axios.get(
-        `/api/product/searchProductByBrandAndPrice?min=${value[0]}&max=${value[1]}&brand=${selectedOption}&name=${search}`
+        `${import.meta.env.BASE_URL}/product/searchProductByBrandAndPrice?min=${
+          value[0]
+        }&max=${value[1]}&brand=${selectedOption}&name=${search}`
       );
       setProducts(data);
       console.log(data);
