@@ -10,7 +10,7 @@ const OrderTable = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.BASE_URL}/order/getAllOrders`
+        `${import.meta.env.VITE_BASE_URL}/order/getAllOrders`
       );
       setOrders(data);
     } catch (error) {

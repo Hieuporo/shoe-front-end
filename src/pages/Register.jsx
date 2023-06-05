@@ -51,7 +51,7 @@ const Register = () => {
         },
       };
       await axios.post(
-        `${import.meta.env.BASE_URL}/auth/register`,
+        `${import.meta.env.VITE_BASE_URL}/auth/register`,
         { email, password, lastName, firstName, number },
         config
       );

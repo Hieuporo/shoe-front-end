@@ -24,7 +24,7 @@ const OrderDetail = () => {
         },
       };
       await axios.post(
-        `${import.meta.env.BASE_URL}/order/createOrder`,
+        `${import.meta.env.VITE_BASE_URL}/order/createOrder`,
         { address, shipping },
         config
       );

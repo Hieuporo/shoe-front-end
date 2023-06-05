@@ -28,7 +28,17 @@ const Login = () => {
         },
       };
 
-      await axios.post("api/auth/login", { email, password }, config);
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URL}/auth/login`,
+        { email, password },
+        config
+      );
+
+      const { data } = await axios.get(
+        `${import.meta.env.VITE_BASE_URL}/product`,
+        config
+      );
+      console.log(data);
       Swal.fire({
         icon: "success",
         title: "Successfully logged in",

@@ -15,7 +15,10 @@ function AppProvider({ children }) {
 
     try {
       if (token) {
-        const { data } = await axios.get(`${import.meta.env.BASE_URL}/user`);
+        const { data } = await axios.get(
+          `${import.meta.env.VITE_BASE_URL}/user`
+        );
+
         setUser(data);
       }
     } catch (error) {

@@ -21,6 +21,8 @@ const Product = () => {
   const [quantity, setQuantity] = useState(1);
   const { fetchCart, setFetchCart } = useAppContext();
 
+  console.log(import.meta.env.VITE_BASE_URL);
+
   const navigate = useNavigate();
 
   const addToCart = async () => {
@@ -32,7 +34,7 @@ const Product = () => {
       };
 
       await axios.post(
-        `${import.meta.env.BASE_URL}/cart/${id}`,
+        `${import.meta.env.VITE_BASE_URL}/cart/${id}`,
         { quantity },
         config
       );
@@ -56,7 +58,7 @@ const Product = () => {
   const getProductById = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.BASE_URL}/product/${id}`
+        `${import.meta.env.VITE_BASE_URL}/product/${id}`
       );
       setProduct(data);
     } catch (error) {
@@ -67,7 +69,7 @@ const Product = () => {
   const getAnotherProduct = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.BASE_URL}/product/getFourProducts/${id}`
+        `${import.meta.env.VITE_BASE_URL}/product/getFourProducts/${id}`
       );
       setProducts(data);
     } catch (error) {
@@ -78,7 +80,7 @@ const Product = () => {
   const getAllReviews = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.BASE_URL}/review/${id}`
+        `${import.meta.env.VITE_BASE_URL}/review/${id}`
       );
       setReviews(data);
     } catch (error) {
@@ -103,7 +105,7 @@ const Product = () => {
         },
       };
       await axios.post(
-        `${import.meta.env.BASE_URL}/review/${id}`,
+        `${import.meta.env.VITE_BASE_URL}/review/${id}`,
         {
           star: rating,
           content,

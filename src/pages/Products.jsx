@@ -12,7 +12,9 @@ const Products = () => {
 
   const getProducts = async () => {
     try {
-      const { data } = await axios.get(`${import.meta.env.BASE_URL}/product`);
+      const { data } = await axios.get(
+        `${import.meta.env.VITE_BASE_URL}/product`
+      );
 
       setProducts(data);
     } catch (error) {
@@ -23,12 +25,15 @@ const Products = () => {
   const getProductByBrandAndPrice = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.BASE_URL}/product/searchProductByBrandAndPrice?min=${
-          value[0]
-        }&max=${value[1]}&brand=${selectedOption}&name=${search}`
+        `${
+          import.meta.env.VITE_BASE_URL
+        }/product/searchProductByBrandAndPrice?min=${value[0]}&max=${
+          value[1]
+        }&brand=${selectedOption}&name=${search}`
       );
-      setProducts(data);
+
       console.log(data);
+      setProducts(data);
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +55,7 @@ const Products = () => {
           <div className="inner_breadcrumb_agileits_w3">
             <ul className="short">
               <li>
-                <a href="index.html">Home</a>
+                <a>Home</a>
                 <i>|</i>
               </li>
               <li>Shop</li>
