@@ -19,7 +19,7 @@ const Product = () => {
 
   const [products, setProducts] = useState([]);
   const [quantity, setQuantity] = useState(1);
-  const { fetchCart, setFetchCart } = useAppContext();
+  const { fetchCart, setFetchCart, user } = useAppContext();
 
   console.log(import.meta.env.VITE_BASE_URL);
 
@@ -246,37 +246,39 @@ const Product = () => {
                   ) : (
                     <div className="tab2">
                       <div className="single_page">
-                        <div className="review-form">
-                          <div style={{ width: "100%" }}>
-                            <Rating
-                              name="text-feedback"
-                              value={rating}
-                              onChange={(event, newValue) => {
-                                setRating(newValue);
+                        {user && (
+                          <div className="review-form">
+                            <div style={{ width: "100%" }}>
+                              <Rating
+                                name="text-feedback"
+                                value={rating}
+                                onChange={(event, newValue) => {
+                                  setRating(newValue);
+                                }}
+                              />
+                            </div>
+                            <div
+                              style={{
+                                display: "flex",
+                                justifyContent: "space-between",
                               }}
-                            />
-                          </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                            }}
-                          >
-                            <input
-                              placeholder="Write a Review"
-                              className="review-input"
-                              value={content}
-                              onChange={(e) => setContent(e.target.value)}
-                            ></input>
-                            <button
-                              type="submit"
-                              className="btn-review"
-                              onClick={sendReview}
                             >
-                              Submit
-                            </button>
+                              <input
+                                placeholder="Write a Review"
+                                className="review-input"
+                                value={content}
+                                onChange={(e) => setContent(e.target.value)}
+                              ></input>
+                              <button
+                                type="submit"
+                                className="btn-review"
+                                onClick={sendReview}
+                              >
+                                Submit
+                              </button>
+                            </div>
                           </div>
-                        </div>
+                        )}
                         {reviews &&
                           reviews.map((review) => (
                             <ReviewItem key={review.id} review={review} />
